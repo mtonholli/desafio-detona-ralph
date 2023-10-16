@@ -9,7 +9,7 @@ const state = {
         gameVelocity: 500,
         hitPosition: 0,
         result: 0,
-        currentTime: 5,
+        currentTime: 30,
     },
     actions: {
         timerId: setInterval(randomSquare, 500),
@@ -42,7 +42,7 @@ function countDown(){
 }
 
 function resetGame() {
-    state.values.currentTime = 10;
+    state.values.currentTime = 30;
     state.values.result = 0;
 
     state.view.timeLeft.textContent = state.values.currentTime;
